@@ -39,11 +39,30 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
 
+      <style>
+
+    .navbar .navbar-brand,
+.navbar .navbar-nav > li > a {
+    display: flex !important;
+    align-items: center !important;
+    height: 70px; /* navbar height */
+}
+
+.navbar .navbar-brand img {
+    height: 50px; 
+}
+
+.navbar .navbar-nav > li > a {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+</style>
+
 </head>
 
 <body>
 
-    <!-- Header 
+     <!-- Header 
     ============================================= -->
     <header id="home">
 
@@ -74,7 +93,7 @@
                     <ul>
                         <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
                     </ul>
-                </div> -->        
+                </div> -->
                 <!-- End Atribute Navigation -->
 
                 <!-- Start Header Navigation -->
@@ -82,16 +101,19 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="./index.html">
-                        <!--<img src="assests/img/logo.png" style="width:200px;" class="logo" alt="Logo">-->
-                        <table>
-                            <tr>
-                                <td height="18"></td>
-                            </tr>
-                        </table>
-                        <font size="5" style="color:#066bb9;"><strong>TileNova</strong></font><br>
-                        <font size="4" style="color:#000;">Vasu & Sons</font>
+                    <a class="navbar-brand d-flex align-items-center" href="index.html" style="gap:10px;">
+                        <img src="./assests/img/t.png" alt="Logo" style="height:50px;">
+
+                        <span style="font-size:22px; font-weight:bold; color:#066bb9;">
+                            TileNova
+                        </span>
+
+                        <span style="font-size:18px; color:#000;">
+                            | Vasu & Sons
+                        </span>
                     </a>
+
+
                 </div>
                 <!-- End Header Navigation -->
 
@@ -104,14 +126,14 @@
                         <li>
                             <a class="smooth-menu" href="#about">About Us</a>
                         </li>
-                         <li>
+                        <li>
                             <a class="smooth-menu" href="./terms.html">Terms & Conditions</a>
                         </li>
-						<li>
+                        <li>
                             <a class="smooth-menu" href="./refund.html">Refund</a>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#contact">contact Us</a>
+                            <a class="smooth-menu" href="./contact_us.html">contact Us</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -121,7 +143,6 @@
         <!-- End Navigation -->
     </header>
     <!-- End Header -->
-
  
 
 <!-- Start About 
